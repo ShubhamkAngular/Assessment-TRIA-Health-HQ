@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="card">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+            <div class="mb-1">
+              <label for="firstname" class="form-label col-6">First Name:</label>
+              <input id="firstname"  class="col-6 form-control" formControlName="firstname" />
+            </div>
+            <div class="mb-1">
+              <label for="middlename" class="form-label col-6">Middle Name:</label>
+              <input id="middlename" class="col-6  form-control" formControlName="middlename" />
+            </div>
+            <div class="mb-1">
+              <label for="lastname" class="form-label col-6">Last Name:</label>
+              <input id="lastname" class="col-6  form-control" formControlName="lastname" />
+            </div>
+            <div class="mb-1">
+              <label for="gender" class="form-label col-6">Gender:</label>
+              <select id="gender" class="col-6  form-control" formControlName="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="mb-1">
+              <label for="birthdate" class="form-label col-6">Birthdate:</label>
+              <input id="birthdate" class="col-6  form-control" type="date" formControlName="birthdate" />
+            </div>
+            <div class="mb-1">
+              <label for="city" class="form-label col-6">City:</label>
+              <input id="city" class="col-6  form-control" formControlName="city" />
+            </div>
+            <div class="mb-1">
+              <label for="state" class="form-label col-6">State:</label>
+              <input id="state" class="col-6  form-control" formControlName="state" />
+            </div>
+            <div class="mb-1">
+              <label for="country"  class="form-label col-6">Country:</label>
+              <input id="country" class="col-6  form-control" formControlName="country" />
+            </div>
+            <div class="mb-1">
+              <label for="zip" class="form-label col-6">Zip:</label>
+              <input id="zip" class="col-6  form-control" formControlName="zip" />
+            </div>
+            <div class="mb-1 d-flex">
+                <button class="btn cssbuttons-io-button " type="submit">Add New User +</button> &nbsp;
+                <button class="btn cssbuttons-io-button " type="button" (click)="viewAllUser()">View All User</button>
+            </div>
+           
+          </form>
+          
+    </div>
+</div>
+
